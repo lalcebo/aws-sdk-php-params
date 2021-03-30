@@ -40,7 +40,10 @@
   "autoload": {
     "psr-4": {
       "Lalcebo\\Aws\\Params\\": "src/"
-    }
+    },
+    "files": [
+      "helpers.php"
+    ]
   },
   "replace": {
     "symfony/polyfill-mbstring": "*"
