@@ -23,6 +23,36 @@ To get started, install the package through Composer:
 composer require lalcebo/aws-sdk-php-params
 ```
 
+#### Example
+
+```php
+# Athena
+use Aws\Sdk;
+use Lalcebo\Aws\Params\Athena\Actions\StartQueryExecution;
+use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionContext;
+use Lalcebo\Aws\Params\Athena\DataTypes\ResultConfiguration;
+
+try {
+    $sdk = new Sdk([
+        'region' => 'us-west-2',
+        'version' => 'latest'
+    ]);
+    $athenaClient = $sdk->createAthena();
+    
+    $startQueryExecution = new StartQueryExecution(
+        'SELECT * FROM tbl',
+        bin2hex(random_bytes(64)),
+        new QueryExecutionContext('catalogName', 'dbName'),
+        new ResultConfiguration(null, 's3://athena-result-bucket/')
+    );
+    
+    $result = $athenaClient->startQueryExecution($startQueryExecution->toArray());
+    print_r($result);
+} catch (Throwable $e) {
+    echo $e->getMessage();
+}
+```
+
 ## About
 
 I'll try to maintain this project as simple as possible, but pull requests are welcomed!
