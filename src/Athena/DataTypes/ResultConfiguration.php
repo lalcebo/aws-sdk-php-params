@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The location in Amazon S3 where query results are stored and the encryption option, if any,
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html
  */
-class ResultConfiguration extends AbstractBaseParam
+class ResultConfiguration extends Parameter
 {
     /**
      * If query results are encrypted in Amazon S3, indicates the encryption option used

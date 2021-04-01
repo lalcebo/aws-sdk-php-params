@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * An object that references a schema stored in the AWS Glue Schema Registry.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Glue\DataTypes
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaReference.html
  */
-class SchemaReference extends AbstractBaseParam
+class SchemaReference extends Parameter
 {
     /**
      * A structure that contains schema identity fields. Either this or the SchemaVersionId has to be provided.

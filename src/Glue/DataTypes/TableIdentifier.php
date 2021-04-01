@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * A structure that describes a target table for resource linking.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Glue\DataTypes
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_TableIdentifier.html
  */
-class TableIdentifier extends AbstractBaseParam
+class TableIdentifier extends Parameter
 {
     /**
      * The ID of the Data Catalog in which the table resides.

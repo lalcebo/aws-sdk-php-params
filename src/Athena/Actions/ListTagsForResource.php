@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Lists the tags associated with an Athena workgroup or data catalog resource.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTagsForResource.html
  */
-class ListTagsForResource extends AbstractBaseParam
+class ListTagsForResource extends Parameter
 {
     /**
      * Lists the tags for the resource with the specified ARN.

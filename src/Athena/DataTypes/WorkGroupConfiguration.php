@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The configuration of the workgroup, which includes the location in Amazon S3 where query results are stored,
@@ -22,7 +22,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroupConfiguration.html
  */
-class WorkGroupConfiguration extends AbstractBaseParam
+class WorkGroupConfiguration extends Parameter
 {
     /**
      * The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.

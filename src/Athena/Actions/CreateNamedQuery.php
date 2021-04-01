@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Creates a named query in the specified workgroup. Requires that you have access to the workgroup.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNamedQuery.html
  */
-class CreateNamedQuery extends AbstractBaseParam
+class CreateNamedQuery extends Parameter
 {
     /**
      * The database to which the query belongs.

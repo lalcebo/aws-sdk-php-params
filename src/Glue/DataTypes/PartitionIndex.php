@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * A structure for a partition index.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Glue\DataTypes
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionIndex.html
  */
-class PartitionIndex extends AbstractBaseParam
+class PartitionIndex extends Parameter
 {
     /**
      * The name of the partition index.

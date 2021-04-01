@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\Tag;
 use Lalcebo\Aws\Params\Athena\DataTypes\WorkGroupConfiguration;
 
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\Athena\DataTypes\WorkGroupConfiguration;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateWorkGroup.html
  */
-class CreateWorkGroup extends AbstractBaseParam
+class CreateWorkGroup extends Parameter
 {
     /**
      * The workgroup name.

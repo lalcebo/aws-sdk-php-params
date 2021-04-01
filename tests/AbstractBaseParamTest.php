@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace Lalcebo\Aws\Params\Tests;
 
 use JsonException;
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use PHPUnit\Framework\TestCase;
 
 class AbstractBaseParamTest extends TestCase
@@ -22,7 +22,7 @@ class AbstractBaseParamTest extends TestCase
      */
     public function toJsonEncodesTheToArrayResult(): void
     {
-        $baseMock = $this->getMockForAbstractClass(AbstractBaseParam::class);
+        $baseMock = $this->getMockForAbstractClass(Parameter::class);
 
         self::assertJsonStringEqualsJsonString(
             json_encode($baseMock->toArray(), JSON_THROW_ON_ERROR),

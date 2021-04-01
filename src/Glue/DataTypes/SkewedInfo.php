@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\ListMap;
 
 /**
@@ -19,7 +19,7 @@ use Lalcebo\Aws\Params\ListMap;
  * @package Lalcebo\Aws\Params\Glue\DataTypes
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_SkewedInfo.html
  */
-class SkewedInfo extends AbstractBaseParam
+class SkewedInfo extends Parameter
 {
     /**
      * A list of names of columns that contain skewed values.
