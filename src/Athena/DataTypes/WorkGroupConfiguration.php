@@ -83,11 +83,11 @@ class WorkGroupConfiguration extends Parameter
      *
      * @param  int|null  $bytesScannedCutoffPerQuery  The upper data usage limit (cutoff) for the amount of bytes a
      * single query in a workgroup is allowed to scan.
-     * @param  bool  $enforceWorkGroupConfiguration  If set to "true", the settings for the workgroup override
+     * @param  bool|null  $enforceWorkGroupConfiguration  If set to "true", the settings for the workgroup override
      * client-side settings. If set to "false", client-side settings are used.
-     * @param  bool  $publishCloudWatchMetricsEnabled  Indicates that the Amazon CloudWatch metrics are enabled for
+     * @param  bool|null  $publishCloudWatchMetricsEnabled  Indicates that the Amazon CloudWatch metrics are enabled for
      * the workgroup.
-     * @param  bool  $requesterPaysEnabled  If set to true, allows members assigned to a workgroup to reference
+     * @param  bool|null  $requesterPaysEnabled  If set to true, allows members assigned to a workgroup to reference
      * Amazon S3 Requester Pays buckets in queries. If set to false, workgroup members cannot query data from
      * Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error.
      * The default is false. For more information about Requester Pays buckets.

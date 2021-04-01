@@ -69,7 +69,7 @@ class CreateDataCatalog extends Parameter
      * account and can use a maximum of 128 alphanumeric, underscore, at sign, or hyphen characters.
      * @param  string  $type  The type of data catalog to create: LAMBDA for a federated catalog or HIVE for an
      * external hive metastore.
-     * @param  array|null  $tags  A list of comma separated tags to add to the data catalog that is created.
+     * @param  Tag[]|null  $tags  A list of comma separated tags to add to the data catalog that is created.
      * @param  ListMap|null  $parameters  Specifies the Lambda function or functions to use for creating
      * the data catalog. This is a mapping whose values depend on the catalog type.
      * @param  string|null  $description  A description of the data catalog to be created.

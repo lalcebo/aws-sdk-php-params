@@ -119,7 +119,7 @@ class StorageDescriptor extends Parameter
      * @param Column[] $columns A list of the Columns in the table.
      * @param string[] $bucketColumns A list of reducer grouping columns, clustering columns,
      * and bucketing columns in the table.
-     * @param bool $compressed True if the data in the table is compressed, or False if not.
+     * @param bool|null $compressed True if the data in the table is compressed, or False if not.
      * @param string|null $inputFormat The input format: SequenceFileInputFormat (binary),
      * or TextInputFormat, or a custom format.
      * @param string|null $location The physical location of the table. By default, this
@@ -135,7 +135,7 @@ class StorageDescriptor extends Parameter
      * @param SkewedInfo|null $skewedInfo The information about values that appear frequently
      * in a column (skewed values).
      * @param Order[] $sortColumns A list specifying the sort order of each bucket in the table.
-     * @param bool $storedAsSubDirectories True if the table data is stored in subdirectories, or False if not.
+     * @param bool|null $storedAsSubDirectories True if the table data is stored in subdirectories, or False if not.
      */
     public function __construct(
         array $columns = null,
