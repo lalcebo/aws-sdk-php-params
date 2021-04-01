@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Lists the data catalogs in the current AWS account.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDataCatalogs.html
  */
-class ListDataCatalogs extends AbstractBaseParam
+class ListDataCatalogs extends Parameter
 {
     /**
      * Specifies the maximum number of data catalogs to return.

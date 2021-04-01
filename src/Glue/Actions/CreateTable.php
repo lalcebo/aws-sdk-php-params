@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Glue\DataTypes\PartitionIndex;
 use Lalcebo\Aws\Params\Glue\DataTypes\TableInput;
 
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\Glue\DataTypes\TableInput;
  * @package Lalcebo\Aws\Params\Glue\Actions
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_CreateTable.html
  */
-class CreateTable extends AbstractBaseParam
+class CreateTable extends Parameter
 {
     /**
      * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.

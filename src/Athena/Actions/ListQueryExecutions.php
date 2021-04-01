@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Provides a list of available query execution IDs for the queries in the specified workgroup.
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ListQueryExecutions.html
  */
-class ListQueryExecutions extends AbstractBaseParam
+class ListQueryExecutions extends Parameter
 {
     /**
      * The maximum number of queries to return in this request.

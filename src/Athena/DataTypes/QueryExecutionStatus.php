@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionStatus\State;
 
 /**
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionStatus\State;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExecutionStatus.html
  */
-class QueryExecutionStatus extends AbstractBaseParam
+class QueryExecutionStatus extends Parameter
 {
     /**
      * The date and time that the query completed, is unix timestamp.

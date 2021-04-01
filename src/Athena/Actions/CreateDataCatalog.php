@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\Actions\CreateDataCatalog\Type;
 use Lalcebo\Aws\Params\Athena\DataTypes\Tag;
 use Lalcebo\Aws\Params\ListMap;
@@ -22,7 +22,7 @@ use Lalcebo\Aws\Params\ListMap;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateDataCatalog.html
  */
-class CreateDataCatalog extends AbstractBaseParam
+class CreateDataCatalog extends Parameter
 {
     /**
      * The name of the data catalog to create. The catalog name must be unique for the AWS account

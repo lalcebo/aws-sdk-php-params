@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionContext;
 use Lalcebo\Aws\Params\Athena\DataTypes\ResultConfiguration;
 
@@ -22,7 +22,7 @@ use Lalcebo\Aws\Params\Athena\DataTypes\ResultConfiguration;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html
  */
-class StartQueryExecution extends AbstractBaseParam
+class StartQueryExecution extends Parameter
 {
     /**
      * A unique case-sensitive string used to ensure the request to create the query

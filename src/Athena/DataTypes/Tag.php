@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * A label that you assign to a resource. In Athena, a resource can be a workgroup or data catalog.
@@ -19,7 +19,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_Tag.html
  */
-class Tag extends AbstractBaseParam
+class Tag extends Parameter
 {
     /**
      * A tag key. The tag key length is from 1 to 128 Unicode characters in UTF-8. You can use letters

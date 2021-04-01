@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The unique ID of the schema in the AWS Glue schema registry.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Glue\DataTypes
  * @see https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaId.html
  */
-class SchemaId extends AbstractBaseParam
+class SchemaId extends Parameter
 {
     /**
      * The Amazon Resource Name (ARN) of the schema. One of SchemaArn or SchemaName has to be provided.

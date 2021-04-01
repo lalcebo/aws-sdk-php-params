@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\EncryptionConfiguration\EncryptionOption;
 
 /**
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\Athena\DataTypes\EncryptionConfiguration\EncryptionOption
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_EncryptionConfiguration.html
  */
-class EncryptionConfiguration extends AbstractBaseParam
+class EncryptionConfiguration extends Parameter
 {
     /**
      * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3),
