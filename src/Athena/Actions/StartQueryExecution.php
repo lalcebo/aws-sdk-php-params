@@ -43,8 +43,6 @@ class StartQueryExecution extends Parameter
     /**
      * The SQL query statements to be executed.
      *
-     *   Constraints: Minimum length of 1. Maximum length of 262144.
-     *
      * @var string
      */
     public $queryString;
@@ -61,8 +59,6 @@ class StartQueryExecution extends Parameter
 
     /**
      * The name of the workgroup in which the query is being started.
-     *
-     *   Pattern: Must have to this constrain [a-zA-Z0-9._-]{1,128}
      *
      * @var string
      */

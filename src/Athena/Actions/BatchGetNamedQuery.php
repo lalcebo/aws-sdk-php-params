@@ -42,7 +42,7 @@ class BatchGetNamedQuery extends Parameter
      * to get details about each unique query execution, and ListQueryExecutionsInput to get a list of query
      * execution IDs.
      *
-     * @param  array  $namedQueryIds  An array of query IDs.
+     * @param  string[]  $namedQueryIds  An array of query IDs.
      */
     public function __construct(array $namedQueryIds)
     {

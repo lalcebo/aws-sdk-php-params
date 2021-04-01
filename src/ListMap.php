@@ -143,6 +143,11 @@ class ListMap implements ArrayAccess, JsonSerializable, Arrayable, Jsonable
         unset($this->items[$offset]);
     }
 
+    /**
+     * Specify data which should be serialized to JSON.
+     *
+     * @return array
+     */
     public function jsonSerialize(): array
     {
         return $this->toArray();
