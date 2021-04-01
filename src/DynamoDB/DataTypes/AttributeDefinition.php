@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\DynamoDB\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
 use Lalcebo\Aws\Params\DynamoDB\DataTypes\AttributeDefinition\AttributeType;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Represents an attribute for describing the key schema for the table and indexes.
@@ -19,7 +19,7 @@ use Lalcebo\Aws\Params\DynamoDB\DataTypes\AttributeDefinition\AttributeType;
  * @package Lalcebo\Aws\Params\DynamoDB\DataTypes
  * @see https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeDefinition.html
  */
-class AttributeDefinition extends AbstractBaseParam
+class AttributeDefinition extends Parameter
 {
     /**
      * A name for the attribute.
