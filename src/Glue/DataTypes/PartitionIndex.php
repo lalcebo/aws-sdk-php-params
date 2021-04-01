@@ -35,8 +35,8 @@ class PartitionIndex extends Parameter
     /**
      * A structure for a partition index.
      *
-     * @param string $indexName
-     * @param string[] $keys
+     * @param string $indexName The name of the partition index.
+     * @param string[] $keys The keys for the partition index.
      */
     public function __construct(string $indexName, array $keys)
     {

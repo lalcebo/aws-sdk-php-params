@@ -38,8 +38,9 @@ class Order extends Parameter
     /**
      * Specifies the sort order of a sorted column.
      *
-     * @param string $column
-     * @param int $sortOrder
+     * @param string $column The name of the column.
+     * @param int $sortOrder Indicates that the column is sorted in ascending
+     * order (== 1), or in descending order (==0).
      *
      * @see SortOrder for the constants available for the $sortOrder parameter.
      */

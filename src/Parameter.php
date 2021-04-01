@@ -49,7 +49,7 @@ abstract class Parameter implements Arrayable, Jsonable, JsonSerializable
     /**
      * Specify data which should be serialized to JSON.
      *
-     * @return mixed|void
+     * @return array
      */
     public function jsonSerialize(): array
     {
