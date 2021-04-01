@@ -23,7 +23,7 @@ To get started, install the package through Composer:
 composer require lalcebo/aws-sdk-php-params
 ```
 
-#### Example
+#### Examples
 
 ```php
 # Athena
@@ -37,6 +37,7 @@ try {
         'region' => 'us-west-2',
         'version' => 'latest'
     ]);
+    
     $athenaClient = $sdk->createAthena();
     
     $startQueryExecution = new StartQueryExecution(
@@ -47,6 +48,46 @@ try {
     );
     
     $result = $athenaClient->startQueryExecution($startQueryExecution->toArray());
+    print_r($result);
+} catch (Throwable $e) {
+    echo $e->getMessage();
+}
+```
+
+```php
+# DynamoDB
+use Aws\Sdk;
+use Lalcebo\Aws\Params\DynamoDB\Actions\CreateTable;
+use Lalcebo\Aws\Params\DynamoDB\DataTypes\AttributeDefinition;
+use Lalcebo\Aws\Params\DynamoDB\DataTypes\KeySchemaElement;
+use Lalcebo\Aws\Params\DynamoDB\DataTypes\ProvisionedThroughput;
+
+try {
+    $sdk = new Sdk([
+        'endpoint' => 'http://localhost:8000',
+        'region' => 'us-west-2',
+        'version' => 'latest'
+    ]);
+    
+    $dynamodb = $sdk->createDynamoDb();
+    
+    $createTable = new CreateTable(
+        'Music',
+        [
+            new AttributeDefinition('Artist', AttributeDefinition\AttributeType::STRING),
+            new AttributeDefinition('SongTitle', AttributeDefinition\AttributeType::STRING),
+        ],
+        [
+            new KeySchemaElement('Artist', KeySchemaElement\KeyType::HASH),
+            new KeySchemaElement('SongTitle', KeySchemaElement\KeyType::RANGE),
+        ],
+        null,
+        null,
+        null,
+        new ProvisionedThroughput(10, 5)
+    );
+    
+    $result = $dynamodb->createTable($createTable->toArray());
     print_r($result);
 } catch (Throwable $e) {
     echo $e->getMessage();
