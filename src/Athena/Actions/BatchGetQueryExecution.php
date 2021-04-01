@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Returns the details of a single query execution or a list of up to 50 query executions, which
@@ -21,7 +21,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQueryExecution.html
  */
-class BatchGetQueryExecution extends AbstractBaseParam
+class BatchGetQueryExecution extends Parameter
 {
     /**
      * An array of query execution IDs.

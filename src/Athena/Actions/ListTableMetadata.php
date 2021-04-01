@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Lists the metadata for the tables in the specified data catalog database.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTableMetadata.html
  */
-class ListTableMetadata extends AbstractBaseParam
+class ListTableMetadata extends Parameter
 {
     /**
      * The name of the data catalog for which table metadata should be returned.

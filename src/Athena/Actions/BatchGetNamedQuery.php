@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Returns the details of a single named query or a list of up to 50 queries, which you provide as an array
@@ -24,7 +24,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQuery.html
  */
-class BatchGetNamedQuery extends AbstractBaseParam
+class BatchGetNamedQuery extends Parameter
 {
     /**
      * An array of query IDs.

@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * A query, where QueryString is the list of SQL query statements that comprise the query.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_NamedQuery.html
  */
-class NamedQuery extends AbstractBaseParam
+class NamedQuery extends Parameter
 {
     /**
      * The database to which the query belongs.

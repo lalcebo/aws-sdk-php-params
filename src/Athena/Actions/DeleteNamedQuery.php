@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Deletes the named query if you have access to the workgroup in which the query was saved.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteNamedQuery.html
  */
-class DeleteNamedQuery extends AbstractBaseParam
+class DeleteNamedQuery extends Parameter
 {
     /**
      * The unique ID of the query to delete.

@@ -22,7 +22,7 @@ use ReflectionProperty;
  *
  * @package Lalcebo\Aws\Params
  */
-abstract class AbstractBaseParam implements Arrayable, Jsonable, JsonSerializable
+abstract class Parameter implements Arrayable, Jsonable, JsonSerializable
 {
     /**
      * Convert the object to its JSON representation.

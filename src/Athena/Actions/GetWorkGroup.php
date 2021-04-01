@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Returns information about the workgroup with the specified name.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGroup.html
  */
-class GetWorkGroup extends AbstractBaseParam
+class GetWorkGroup extends Parameter
 {
     /**
      * The name of the workgroup.

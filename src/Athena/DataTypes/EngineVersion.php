@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The Athena engine version for running queries.
@@ -18,7 +18,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_EngineVersion.html
  */
-class EngineVersion extends AbstractBaseParam
+class EngineVersion extends Parameter
 {
     /**
      * The engine version on which the query runs. If the user requests a valid engine

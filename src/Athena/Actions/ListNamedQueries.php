@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that
@@ -20,7 +20,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\Actions
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNamedQueries.html
  */
-class ListNamedQueries extends AbstractBaseParam
+class ListNamedQueries extends Parameter
 {
     /**
      * The maximum number of queries to return in this request.

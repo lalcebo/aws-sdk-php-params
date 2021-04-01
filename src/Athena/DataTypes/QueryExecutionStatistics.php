@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\AbstractBaseParam;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The amount of data scanned during the query execution and the amount of
@@ -19,7 +19,7 @@ use Lalcebo\Aws\Params\AbstractBaseParam;
  * @package Lalcebo\Aws\Params\Athena\DataTypes
  * @see https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExecutionStatistics.html
  */
-class QueryExecutionStatistics extends AbstractBaseParam
+class QueryExecutionStatistics extends Parameter
 {
     /**
      * The location and file name of a data manifest file. The manifest file is saved to
