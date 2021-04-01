@@ -14,7 +14,7 @@ use JsonException;
 use Lalcebo\Aws\Params\Parameter;
 use PHPUnit\Framework\TestCase;
 
-class AbstractBaseParamTest extends TestCase
+class ParameterTest extends TestCase
 {
     /**
      * @test
