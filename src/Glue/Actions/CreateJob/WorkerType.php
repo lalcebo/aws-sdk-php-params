@@ -20,7 +20,7 @@ class WorkerType
     public const STANDARD = 'Standard';
 
     /**
-     * each worker maps to 1 DPU (4 vCPU, 16 GB of memory, 64 GB disk), and provides 1 executor
+     * Each worker maps to 1 DPU (4 vCPU, 16 GB of memory, 64 GB disk), and provides 1 executor
      * per worker. We recommend this worker type for memory-intensive jobs.
      *
      * @var string
@@ -28,7 +28,7 @@ class WorkerType
     public const G1X = 'G.1X';
 
     /**
-     * each worker maps to 2 DPU (8 vCPU, 32 GB of memory, 128 GB disk), and provides 1 executor
+     * Each worker maps to 2 DPU (8 vCPU, 32 GB of memory, 128 GB disk), and provides 1 executor
      * per worker. We recommend this worker type for memory-intensive jobs.
      *
      * @var string
