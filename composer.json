@@ -28,7 +28,7 @@
     "php": "^7.3|^8.0",
     "ext-ctype": "^7.3",
     "ext-json": "^7.3",
-    "lalcebo/sdk-php-helpers": "dev-master"
+    "lalcebo/sdk-php-helpers": "^0.1.0"
   },
   "require-dev": {
     "php-parallel-lint/php-console-highlighter": "^0.5.0",
