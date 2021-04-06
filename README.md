@@ -110,4 +110,4 @@ The MIT License (MIT). Please see [License File][link-license] for more informat
 [link-packagist]: https://packagist.org/packages/lalcebo/aws-sdk-php-params
 [link-license]: LICENSE
 [link-downloads]: https://packagist.org/packages/lalcebo/aws-sdk-php-params
-[link-workflow]: https://github.com/lalcebo/sdk-php-helpers/actions/workflows/build.yml
+[link-workflow]: https://github.com/lalcebo/aws-sdk-php-params/actions/workflows/build.yml
