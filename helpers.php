@@ -12,13 +12,13 @@ if (!function_exists('numericRangeValid')) {
     /**
      * Set the numeric value to the valid range.
      *
-     * @param int $value
+     * @param int|null $value
      * @param int $min
      * @param int $max
-     * @return int
+     * @return int|null
      */
-    function numericRangeValid(int $value, int $min, int $max): int
+    function numericRangeValid(?int $value, int $min, int $max): ?int
     {
-        return max(min(abs($value), $max), $min);
+        return is_int($value) ? max(min(abs($value), $max), $min) : null;
     }
 }
