@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\ListMap;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Describes the physical storage of table data.

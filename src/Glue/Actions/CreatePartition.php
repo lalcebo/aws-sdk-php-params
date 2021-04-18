@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\Actions;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Glue\DataTypes\PartitionInput;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Creates a new partition.

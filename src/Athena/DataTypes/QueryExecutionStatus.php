@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionStatus\State;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * The completion date, current state, submission time, and state

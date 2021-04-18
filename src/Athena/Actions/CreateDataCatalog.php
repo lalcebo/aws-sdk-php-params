@@ -10,10 +10,10 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\Actions\CreateDataCatalog\Type;
 use Lalcebo\Aws\Params\Athena\DataTypes\Tag;
 use Lalcebo\Aws\Params\ListMap;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Creates (registers) a data catalog with the specified name and properties.

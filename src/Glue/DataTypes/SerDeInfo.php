@@ -10,9 +10,9 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Glue\DataTypes\SerDeInfo\SerializationLibrary;
 use Lalcebo\Aws\Params\ListMap;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Information about a serialization/deserialization program (SerDe) that serves as an extractor and loader.

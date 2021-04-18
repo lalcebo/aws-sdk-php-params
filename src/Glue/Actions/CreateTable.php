@@ -10,9 +10,9 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\Actions;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Glue\DataTypes\PartitionIndex;
 use Lalcebo\Aws\Params\Glue\DataTypes\TableInput;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Creates a new table definition in the Data Catalog.

@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Glue\DataTypes\Order\SortOrder;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Specifies the sort order of a sorted column.
