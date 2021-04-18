@@ -10,9 +10,9 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\QueryExecutionContext;
 use Lalcebo\Aws\Params\Athena\DataTypes\ResultConfiguration;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in

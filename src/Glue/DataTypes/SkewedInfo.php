@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Glue\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\ListMap;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Specifies skewed values in a table. Skewed values are those that occur with very high frequency.

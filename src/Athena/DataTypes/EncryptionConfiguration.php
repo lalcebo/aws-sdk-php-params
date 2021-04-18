@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\DataTypes;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\EncryptionConfiguration\EncryptionOption;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * If query results are encrypted in Amazon S3, indicates the encryption

@@ -10,9 +10,9 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Athena\Actions;
 
-use Lalcebo\Aws\Params\Parameter;
 use Lalcebo\Aws\Params\Athena\DataTypes\Tag;
 use Lalcebo\Aws\Params\Athena\DataTypes\WorkGroupConfiguration;
+use Lalcebo\Aws\Params\Parameter;
 
 /**
  * Creates a workgroup with the specified name.
