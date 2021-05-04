@@ -70,7 +70,7 @@ class CreateTableTest extends TestCase
                             'string'
                         ),
                         'string',
-                        1,
+                        1
                     ),
                     new SerDeInfo(
                         'string',

@@ -60,7 +60,7 @@ class CreateTableTest extends TestCase
             new StreamSpecification(true, StreamSpecification\StreamViewType::KEYS_ONLY),
             [
                 new Tag('string', 'string')
-            ],
+            ]
         );
 
         self::assertJsonStringEqualsJsonString(
