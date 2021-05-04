@@ -91,7 +91,7 @@ class ListMapTest extends TestCase
         $results = $listMap->toJson();
 
         self::assertJsonStringEqualsJsonString(
-            json_encode($listMap->toArray(), JSON_THROW_ON_ERROR),
+            json_encode($listMap->toArray()),
             $results
         );
     }

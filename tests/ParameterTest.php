@@ -25,7 +25,7 @@ class ParameterTest extends TestCase
         $baseMock = $this->getMockForAbstractClass(Parameter::class);
 
         self::assertJsonStringEqualsJsonString(
-            json_encode($baseMock->toArray(), JSON_THROW_ON_ERROR),
+            json_encode($baseMock->toArray()),
             $baseMock->toJson()
         );
     }
