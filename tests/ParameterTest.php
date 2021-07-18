@@ -10,16 +10,12 @@ declare(strict_types=1);
 
 namespace Lalcebo\Aws\Params\Tests;
 
-use JsonException;
 use Lalcebo\Aws\Params\Parameter;
 use PHPUnit\Framework\TestCase;
 
 class ParameterTest extends TestCase
 {
-    /**
-     * @test
-     * @throws JsonException
-     */
+    /** @test */
     public function toJsonEncodesTheToArrayResult(): void
     {
         $baseMock = $this->getMockForAbstractClass(Parameter::class);

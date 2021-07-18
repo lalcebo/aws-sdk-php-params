@@ -11,7 +11,6 @@ declare(strict_types=1);
 namespace Lalcebo\Aws\Params\Tests;
 
 use InvalidArgumentException;
-use JsonException;
 use Lalcebo\Aws\Params\ListMap;
 use PHPUnit\Framework\TestCase;
 use ReflectionObject;
@@ -20,13 +19,12 @@ class ListMapTest extends TestCase
 {
     /**
      * @var array
-     * @see https://next.json-generator.com/
      */
     protected $providedTestArray = [
         'guid' => 'df777d8b-980d-4d35-8ad1-fdd47601c4e7',
         'isActive' => '1',
         'balance' => '$1,350.10',
-        'picture' => 'http://placehold.it/32x32',
+        'picture' => 'https://placehold.it/32x32',
         'firstName' => 'Vinson',
         'lastName' => 'Tucker'
     ];
@@ -52,7 +50,10 @@ class ListMapTest extends TestCase
         self::assertSame('Tucker', $listMap->lastName);
     }
 
-    /** @test */
+    /**
+     * @test
+     * @noinspection PhpUndefinedFieldInspection
+     */
     public function setMethodReturnsItem(): void
     {
         $listMap = new ListMap($this->providedTestArray);
@@ -70,7 +71,7 @@ class ListMapTest extends TestCase
         $listMap = new ListMap($this->providedTestArray);
 
         self::assertTrue(isset($listMap['picture']));
-        self::assertEquals('http://placehold.it/32x32', $listMap['picture']);
+        self::assertEquals('https://placehold.it/32x32', $listMap['picture']);
     }
 
     /** @test */
@@ -81,10 +82,7 @@ class ListMapTest extends TestCase
         self::assertEquals($this->providedTestArray, $listMap->toArray());
     }
 
-    /**
-     * @test
-     * @throws JsonException
-     */
+    /** @test */
     public function toJsonEncodeTheToArrayResult(): void
     {
         $listMap = new ListMap($this->providedTestArray);
@@ -109,11 +107,9 @@ class ListMapTest extends TestCase
     public function issetMagicMethod(): void
     {
         $listMap = new ListMap($this->providedTestArray);
-
         self::assertTrue(isset($listMap->isActive));
 
         unset($listMap->isActive);
-
         self::assertFalse(isset($fluent->isActive));
     }
 }
