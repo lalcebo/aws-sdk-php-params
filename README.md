@@ -7,7 +7,7 @@
 
 ## Introduction
 
-The AWS SDK for PHP uses arrays associated with very specific structures as arguments to its methods, this leads to a a great dependency on the documentation to create these arrays, what are the optional keys, their possible values, etc. This package provides objects for building request parameters for AWS low-level API.
+The AWS SDK for PHP uses arrays associated with very specific structures as arguments to its methods, this leads to a great dependency on the documentation to create these arrays, what are the optional keys, their possible values, etc. This package provides objects for building request parameters for AWS low-level API.
 
 ## Requirements
 
