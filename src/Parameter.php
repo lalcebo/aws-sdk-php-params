@@ -32,7 +32,6 @@ abstract class Parameter implements Arrayable, Jsonable, JsonSerializable
      */
     public function toJson($options = 0): string
     {
-        /** @noinspection JsonEncodingApiUsageInspection */
         return json_encode($this->jsonSerialize(), $options);
     }
 
