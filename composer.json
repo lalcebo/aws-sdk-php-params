@@ -42,7 +42,7 @@
       "Lalcebo\\Aws\\Params\\": "src/"
     },
     "files": [
-      "helpers.php"
+      "src/helpers.php"
     ]
   },
   "autoload-dev": {

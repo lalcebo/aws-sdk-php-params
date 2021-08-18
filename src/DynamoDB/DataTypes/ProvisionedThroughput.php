@@ -47,7 +47,7 @@ class ProvisionedThroughput extends Parameter
      */
     public function __construct(int $readCapacityUnits, int $writeCapacityUnits)
     {
-        $this->readCapacityUnits = numericRangeValid($readCapacityUnits, 0, 1);
-        $this->writeCapacityUnits = numericRangeValid($writeCapacityUnits, 0, 1);
+        $this->readCapacityUnits = int_in_range($readCapacityUnits, 0, 1);
+        $this->writeCapacityUnits = int_in_range($writeCapacityUnits, 0, 1);
     }
 }

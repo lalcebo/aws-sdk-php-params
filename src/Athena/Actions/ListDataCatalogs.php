@@ -46,7 +46,7 @@ class ListDataCatalogs extends Parameter
      */
     public function __construct(int $maxResults = null, string $nextToken = null)
     {
-        $this->maxResults = numericRangeValid($maxResults, 2, 50);
+        $this->maxResults = int_in_range($maxResults, 2, 50);
         $this->nextToken = $nextToken;
     }
 }

@@ -80,7 +80,7 @@ class ListTableMetadata extends Parameter
         $this->catalogName = $catalogName;
         $this->databaseName = $databaseName;
         $this->expression = $expression;
-        $this->maxResults = numericRangeValid($maxResults, 1, 50);
+        $this->maxResults = int_in_range($maxResults, 1, 50);
         $this->nextToken = $nextToken;
     }
 }
