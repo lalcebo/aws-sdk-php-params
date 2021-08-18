@@ -57,6 +57,6 @@ class SchemaReference extends Parameter
     ) {
         $this->schemaId = $schemaId;
         $this->schemaVersionId = $schemaVersionId;
-        $this->schemaVersionNumber = numericRangeValid($schemaVersionNumber, 1, 100000);
+        $this->schemaVersionNumber = int_in_range($schemaVersionNumber, 1, 100000);
     }
 }

@@ -47,6 +47,6 @@ class Order extends Parameter
     public function __construct(string $column, int $sortOrder)
     {
         $this->column = $column;
-        $this->sortOrder = numericRangeValid($sortOrder, 0, 1);
+        $this->sortOrder = int_in_range($sortOrder, 0, 1);
     }
 }

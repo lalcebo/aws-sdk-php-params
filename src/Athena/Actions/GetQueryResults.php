@@ -57,7 +57,7 @@ class GetQueryResults extends Parameter
     public function __construct(string $queryExecutionId, int $maxResults = null, string $nextToken = null)
     {
         $this->queryExecutionId = $queryExecutionId;
-        $this->maxResults = numericRangeValid($maxResults, 1, 1000);
+        $this->maxResults = int_in_range($maxResults, 1, 1000);
         $this->nextToken = $nextToken;
     }
 }

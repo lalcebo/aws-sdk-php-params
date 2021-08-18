@@ -60,7 +60,7 @@ class ListNamedQueries extends Parameter
      */
     public function __construct(int $maxResults = null, string $nextToken = null, string $workGroup = null)
     {
-        $this->maxResults = numericRangeValid($maxResults, 0, 50);
+        $this->maxResults = int_in_range($maxResults, 0, 50);
         $this->nextToken = $nextToken;
         $this->workGroup = $workGroup;
     }
