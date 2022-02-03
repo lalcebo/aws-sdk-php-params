@@ -166,12 +166,11 @@ class ListMap implements ArrayAccess, JsonSerializable, Arrayable, Jsonable
     /**
      * Convert the object to its JSON representation.
      *
-     * @param  int  $options
+     * @param int $options
      * @return string
      */
-    public function toJson($options = 0): string
+    public function toJson(int $options = 0): string
     {
-        /** @noinspection JsonEncodingApiUsageInspection */
         return json_encode($this->jsonSerialize(), $options);
     }
 }
