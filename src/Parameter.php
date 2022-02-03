@@ -30,7 +30,7 @@ abstract class Parameter implements Arrayable, Jsonable, JsonSerializable
      * @param int $options
      * @return string
      */
-    public function toJson($options = 0): string
+    public function toJson(int $options = 0): string
     {
         return json_encode($this->jsonSerialize(), $options);
     }
